@@ -5,7 +5,7 @@ import re
 class ImgSpider(scrapy.Spider):
     name = "forimg"
     allowed_domains = ["tp123456.com"]
-    start_urls = ["http://img.tp123456.com/Html/53964.html",]
+    start_urls = ["http://img.tp123456.com/Html/54018.html",]
 
     def parse(self,response):
         url = response.xpath('//img/@src').extract()
